@@ -17,13 +17,11 @@ async function drawChart() {
         mappedLabs.push(labInfo);
     });
 
-    // Create the data table.
     const data = new google.visualization.DataTable();
     data.addColumn('string', 'lab name');
     data.addColumn('number', 'cure progress');
     data.addRows(mappedLabs);
 
-    // Set chart options
     const options = {
         'title': 'Cure progress in labs',
         'width': 1000,

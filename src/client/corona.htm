@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-
 <body>
-
     <h1>ענבר מזרחי השליטע נלחמת בקורונה</h1>
 
+    <script src='scripts/systemTimers.js'></script>
     <script src='scripts/soldiers.js'></script>
     <script src='scripts/labs.js'></script>
-    <script src='scripts/systemTimers.js'></script>
     <script src='scripts/cure.js'></script>
     <script>
         window.onload = getCureStatus();
     </script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type=text/javascript src='./scripts/labTable.js'></script>
     <script type="text/javascript" src='./scripts/chart.js'></script>
 
     <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את מספר המבודדים במדור</button>
@@ -33,7 +32,7 @@
     <span id='timer'>test</span>
 
     <div id="chart_div"></div>
-
+    <div id='table_div'></div>
 </body>
 
 </html>
