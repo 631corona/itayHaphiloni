@@ -1,0 +1,71 @@
+{
+    "labs": 
+    [
+        {
+            "id":0,
+            "name": "חן",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 20
+        },
+        {
+            "id":1,
+            "name": "דן",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 10
+        },
+        {
+            "id":3,
+            "name": "דביר",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 40
+        },
+        {
+            "id":4,
+            "name": "עמית",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 60
+        },
+        {
+            "id":5,
+            "name": "אריאל",
+            "status": "FAILED",
+            "progress_percentile": 5
+        },
+        {
+            "id":6,
+            "name": "יוני",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 80
+        },
+        {
+            "id":7,
+            "name": "ליאת",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 10
+        },
+        {
+            "id":8,
+            "name": "אופיר",
+            "status": "FAILED",
+            "progress_percentile": 45
+        },
+        {
+            "id":9,
+            "name": "רועי",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 95
+        },
+        {
+            "id":10,
+            "name": "עדי",
+            "status": "IN_PROGRESS",
+            "progress_percentile": 75
+        },
+        {
+            "id":11,
+            "name": "יעל",
+            "status": "FAILED",
+            "progress_percentile": 30
+        }
+    ]
+}

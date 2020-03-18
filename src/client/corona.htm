@@ -5,12 +5,18 @@
 <body>
 
     <h1>ענבר מזרחי השליטע נלחמת בקורונה</h1>
-    
+
     <script src='scripts/soldiers.js'></script>
+    <script src='scripts/labs.js'></script>
     <script src='scripts/pauseTheSystem.js'></script>
 
-    <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את מספר המבודדים במדור</button><div id='isolatedDisplay'></div>
-    <button type='button' onclick='showAmountAtHome()' id='soldiersAtHome'>לחץ כדי לראות כמה חיילים נמצאים בבית</button><div id='atHomeDisplay'></div>
+    <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את מספר המבודדים במדור</button>
+    <div id='isolatedDisplay'></div>
+    <button type='button' onclick='showAmountAtHome()' id='soldiersAtHome'>לחץ כדי לראות כמה חיילים נמצאים בבית</button>
+    <div id='atHomeDisplay'></div>
+
+    <button type='button' onclick='getLabsProgress()' id='labsProgress'></button>
+    <div id='labsProgressDisplay'></div>
     <table>
         <tr>
             <td> <img src='images/yossi-corona-test.jpg' height='300'> </td>

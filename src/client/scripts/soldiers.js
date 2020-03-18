@@ -9,7 +9,7 @@ async function showIsolated() {
 
     let isolatedSoldiers = [];
 
-    soldiersData.body.soldiers.forEach(soldier => {
+    soldiersData.soldiers.forEach(soldier => {
         soldier.quarantine === true ? isolatedSoldiers.push(soldier.name) : isolatedSoldiers
     });
 
@@ -27,7 +27,7 @@ async function showAmountAtHome() {
 
     let amountAtHome = 0;
 
-    soldiersData.body.soldiers.forEach(soldier => {
+    soldiersData.soldiers.forEach(soldier => {
         soldier.location === 'HOME' ? amountAtHome++ : amountAtHome
     });
 

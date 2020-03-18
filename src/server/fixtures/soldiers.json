@@ -1,28 +1,24 @@
 {
-        "status": 200,
-        "body": {
-            "soldiers":
-                [
-                    {
-                        "name": "itay",
-                        "quarantine": false,
-                        "location": "HOME"
-                    },
-                    {
-                        "name": "carmel",
-                        "quarantine": true,
-                        "location": "HOSPITAL"
-                    },
-                    {
-                        "name": "shabi",
-                        "quarantine": false,
-                        "location": "BASE"
-                    },
-                    {
-                        "name": "kerenPeles",
-                        "quarantine": false,
-                        "location": "ABROAD"
-                    }
-                ]
+    "soldiers": [
+        {
+            "name": "itay",
+            "quarantine": false,
+            "location": "HOME"
+        },
+        {
+            "name": "carmel",
+            "quarantine": true,
+            "location": "HOSPITAL"
+        },
+        {
+            "name": "shabi",
+            "quarantine": false,
+            "location": "BASE"
+        },
+        {
+            "name": "kerenPeles",
+            "quarantine": false,
+            "location": "ABROAD"
         }
-    }
+    ]
+}
