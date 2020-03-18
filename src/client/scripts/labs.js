@@ -7,6 +7,10 @@ async function getLabsProgress() {
 
     const labsData = await getLabsData.json();
 
-    console.log(labsData);
+    const sortedLabs = labsData.labs.sort((a, b) => a.name.localeCompare(b.firstname));
+
+    sortedLabs.forEach(lab => {
+        document.getElementById('labsProgressDisplay').innerHTML += JSON.stringify(lab);
+    });
 
 };
