@@ -26,6 +26,6 @@ window.onload = async () => {
     }
 
     else {
-        timer.innerHTML = 'cure has not been founded yet';
+        timer.innerHTML = 'cure has not been found yet';
     }
 };

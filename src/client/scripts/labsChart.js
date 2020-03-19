@@ -25,7 +25,7 @@ async function drawChart() {
     const options = {
         'title': 'Cure progress in labs',
         'width': 1000,
-        'height': 1000
+        'height': 500
     };
 
     const chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));

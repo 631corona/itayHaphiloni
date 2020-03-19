@@ -20,15 +20,15 @@ async function drawTable() {
     });
 
     const data = new google.visualization.DataTable();
-    data.addColumn('string', 'lab name');
-    data.addColumn('string', 'cure progress');
-    data.addColumn('number', 'lab id');
-    data.addColumn('string', 'lab status');
+    data.addColumn('string', 'שם המעדה');
+    data.addColumn('string', 'התקדמות לחיסון');
+    data.addColumn('number', 'מזהה מעבדה');
+    data.addColumn('string', 'מצב החיסון');
     data.addRows(mappedLabs);
 
     const options = {
         'width': 1000,
-        'height': 1000
+        'height': 500
     };
 
     const table = new google.visualization.Table(document.getElementById('table_div'));

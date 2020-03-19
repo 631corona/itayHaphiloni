@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
+
+<head>
+    <link rel='stylesheet' type='text/css' href='corona.css'>
+</head>
 
 <body>
     <h1>ענבר מזרחי השליטע נלחמת בקורונה</h1>
-
-    <script src='scripts/systemTimers.js'></script>
-    <script src='scripts/soldiers.js'></script>
-    <script src='scripts/cure.js'></script>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type=text/javascript src='./scripts/labsTable.js'></script>
     <script type="text/javascript" src='./scripts/labsChart.js'></script>
 
-    <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את מספר המבודדים במדור</button>
-    <div id='isolatedDisplay'></div>
-    <button type='button' onclick='showAmountAtHome()' id='soldiersAtHome'>לחץ כדי לראות כמה חיילים נמצאים בבית</button>
-    <div id='atHomeDisplay'></div>
+    <script src='scripts/systemTimers.js'></script>
+    <script src='scripts/soldiers.js'></script>
+    <script src='scripts/cure.js'></script>
 
-    <table>
+    <div id='soldiersData'>
+        <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את מספר המבודדים במדור</button>
+        <div id='isolatedDisplay'></div>
+        <button type='button' onclick='showAmountAtHome()' id='soldiersAtHome'>לחץ כדי לראות כמה חיילים נמצאים
+            בבית</button>
+        <div id='atHomeDisplay'></div>
+    </div>
+
+    <table id='images'>
         <tr>
             <td> <img src='images/yossi-corona-test.jpg' height='300'> </td>
             <td> <img src='images/maor.jpg' height='300'> </td>
         </tr>
     </table>
 
-    <span id='timer'>test</span>
+    <span id='timer'></span>
 
-    <div id="chart_div"></div>
-    <div id='table_div'></div>
+    <div id='graphs'>
+        <div id="chart_div"></div>
+        <div id='table_div'></div>
+    </div>
 </body>
 
 </html>
