@@ -13,14 +13,11 @@ async function drawTable() {
 
     const sortedLabs = labsData.labs.sort((a, b) => a.name.localeCompare(b.name));
 
-    console.log(sortedLabs);
-
     let mappedLabs = [];
     sortedLabs.forEach((lab) => {
         const labInfo = [lab.name, `${lab.progress_percentile}%`, lab.id, lab.status];
         mappedLabs.push(labInfo);
     });
-
 
     const data = new google.visualization.DataTable();
     data.addColumn('string', 'lab name');
