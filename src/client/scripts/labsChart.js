@@ -24,7 +24,7 @@ async function drawChart() {
 
     const options = {
         'title': 'Cure progress in labs',
-        'width': 1000,
+        'width': 500,
         'height': 500
     };
 

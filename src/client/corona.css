@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+div {
+    padding: 10px;
+}
+
 #soldiersData {
     display: flex;
     width: fit-content;
@@ -57,11 +61,9 @@ span {
 #chart_div {
     margin: auto;
     width: 500px;
-    float: right;
 }
 
 #table_div {
     margin: auto;
     width: 500px;
-    float: right;
 }

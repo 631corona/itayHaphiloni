@@ -27,7 +27,7 @@ async function drawTable() {
     data.addRows(mappedLabs);
 
     const options = {
-        'width': 1000,
+        'width': 500,
         'height': 500
     };
 
