@@ -1,10 +1,10 @@
 const express = require('express');
-const { getSoldiersData } = require('../logic/soldiers/soldiersLogic');
+const { getLabsData } = require('../logic/labs/labsLogic');
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send(getSoldiersData());
+    res.send(getLabsData())
 });
 
 module.exports = router;
