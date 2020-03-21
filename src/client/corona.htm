@@ -9,33 +9,52 @@
     <h1>ענבר מזרחי השליטע נלחמת בקורונה</h1>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src='./scripts/displayDivs.js'></script>
     <script type=text/javascript src='./scripts/labsTable.js'></script>
     <script type="text/javascript" src='./scripts/labsChart.js'></script>
 
     <script src='scripts/systemTimers.js'></script>
     <script src='scripts/soldiers.js'></script>
     <script src='scripts/cure.js'></script>
+    <div id='main' >
+        <div class='side-bar'>
+            <div>
+                <h2 onclick="displaySoldiersData()"> לחץ כדי לקבל מידע על חיילים</h2>
+            </div>
+            <div>
+                <h2 onclick="displayImages()">לחץ לקבלת תמונות מהשטח</h2>
+            </div>
+            <div>
+                <h2 onclick="displayLabsData()">לחץ כדי לקבל מידע על מעבדות</h2>
+            </div>
+        </div>
 
-    <div id='soldiersData'>
-        <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את שמות המבודדים מהמדור</button>
-        <div id='isolatedDisplay'></div>
-        <button type='button' onclick='showAmountAtHome()' id='soldiersAtHome'>לחץ כדי לראות כמה חיילים נמצאים
-            בבית</button>
-        <div id='atHomeDisplay'></div>
-    </div>
+        <div class='main-bar'>
+            <div id='soldiersData' style= 'display:none'>
+                <button type='button' onclick='showIsolated()' id='isolated'>לחץ כדי להראות את שמות המבודדים
+                    מהמדור</button>
+                <div id='isolatedDisplay'></div>
+                <button type='button' onclick='showAmountAtHome()' id='soldiersAtHome'>לחץ כדי לראות כמה חיילים נמצאים
+                    בבית</button>
+                <div id='atHomeDisplay'></div>
+            </div>
 
-    <table id='images'>
-        <tr>
-            <td> <img src='images/yossi-corona-test.jpg' height='300'> </td>
-            <td> <img src='images/maor.jpg' height='300'> </td>
-        </tr>
-    </table>
+            <table id='images' style= 'display:none'>
+                <tr>
+                    <td> <img src='images/yossi-corona-test.jpg' height='300'> </td>
+                    <td> <img src='images/maor.jpg' height='300'> </td>
+                </tr>
+            </table>
 
-    <span id='timer'></span>
+            <span id='timer'></span>
 
-    <div id='graphs'>
-        <div id="chart_div"></div>
-        <div id='table_div'></div>
+            <div id='graphs' style= 'display:none'>
+                <div id="chart_div"></div>
+                <div id='table_div'></div>
+            </div>
+        </div>
+
+
     </div>
 </body>
 
