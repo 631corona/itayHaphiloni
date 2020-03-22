@@ -8,22 +8,29 @@ h1 {
 }
 
 div {
-    padding: 10px;
+    padding: 5px;
 }
 
 h2:hover {
-    font-size:25px;
+    font-size: 25px;
     cursor: pointer;
+}
+
+#graphs {
+    position: fixed;
+    right:18%;
 }
 
 #chart_div {
     margin: auto;
     width: 500px;
+    float: left;
 }
 
 #table_div {
     margin: auto;
     width: 500px;
+    float: left;
 }
 
 .sidenav {
