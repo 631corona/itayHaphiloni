@@ -2,7 +2,7 @@
     "soldiers": [
         {
             "name": "itay",
-            "quarantine": false,
+            "quarantine": true,
             "location": "HOME"
         },
         {

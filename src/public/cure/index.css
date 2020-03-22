@@ -4,6 +4,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 65px;
 }
 
 div {
@@ -21,7 +22,6 @@ h2:hover {
 }
 
 button {
-    float: right;
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;

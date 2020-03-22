@@ -4,6 +4,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 65px;
 }
 
 h2:hover {
@@ -13,6 +14,10 @@ h2:hover {
 
 div {
     padding: 10px;
+}
+
+p {
+    font-size: 50px;
 }
 
 .sidenav {

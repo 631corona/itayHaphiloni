@@ -4,27 +4,27 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 65px;
 }
 
 div {
     padding: 10px;
 }
 
-#soldiersData {
-    display: flex;
-    width: fit-content;
-    margin: auto;
-}
-
 h2:hover {
-    font-size:25px;
+    font-size: 25px;
     cursor: pointer;
 }
 
+.display {
+    font-size: 30px;
+    margin: 15px;
+}
+
 button {
-    float: right;
     display: inline-block;
-    padding: 0.35em 1.2em;
+    font-size: 16px;
+    padding: 1em 1.2em;
     border: 0.1em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
