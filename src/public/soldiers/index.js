@@ -1,30 +1,5 @@
-const homeDivPage = document.getElementById('homePage');
-const soldiersDivPage = document.getElementById('soldiersPage');
-const labsDivPage = document.getElementById('labsPage');
-const imagesDivPage = document.getElementById('imagesPage');
-const cureDivPage = document.getElementById('curePage');
 const isolatedDiv = document.getElementById('isolated');
 const atHomeDiv = document.getElementById('soldiersAtHome');
-
-homeDivPage.onclick = () => {
-    window.location.href = '../';
-};
-
-soldiersDivPage.onclick = () => {
-    window.location.href = '../soldiers';
-};
-
-labsDivPage.onclick = () => {
-    window.location.href = '../labs';
-};
-
-imagesDivPage.onclick = () => {
-    window.location.href = '../images';
-};
-
-cureDivPage.onclick = () => {
-    window.location.href = '../cure';
-};
 
 isolatedDiv.onclick = async () => {
     const getSoldiersData = await fetch('http://localhost:3000/api/soldiers', {

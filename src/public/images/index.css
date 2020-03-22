@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: lightgray;
 }
 
 h1 {
@@ -14,6 +14,8 @@ div {
     display:grid;
     grid-template-columns: 20% 80%;
     grid-gap: 50px;
+    margin-right: 160px;
+    padding: 0px 10px;
 }
 
 h2:hover {
@@ -36,4 +38,28 @@ img:hover {
     border: 1px solid #777;
     width: 320px;
     height: 320px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 110px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
 }
