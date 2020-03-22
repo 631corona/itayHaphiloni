@@ -17,13 +17,14 @@ cureButton.onclick = async () => {
         let test = setInterval(myTimer, 1000);
 
         function myTimer() {
-            if (time === 0) {
-                clearInterval(test);
-                alert('celebration!!!!');
-            }
 
             timer.innerHTML = `cure found!! celebration in ${time} seconds`;
 
+            if (time === 0) {
+                clearInterval(test);
+                timer.innerHTML = '';
+                alert('celebration!!!!');
+            }
             time--;
         };
     }
