@@ -1,11 +1,11 @@
-const soldiersDivPage = document.getElementById('soldiersPage');
+const homeDivPage = document.getElementById('homePage');
 const imagesDivPage = document.getElementById('imagesPage');
 const labsDivPage = document.getElementById('labsPage');
 const isolatedDiv = document.getElementById('isolated');
 const atHomeDiv = document.getElementById('soldiersAtHome');
 
-soldiersDivPage.onclick = () => {
-    window.location.href = '../soldiers';
+homeDivPage.onclick = () => {
+    window.location.href = '../';
 };
 
 imagesDivPage.onclick = () => {

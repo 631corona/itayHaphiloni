@@ -1,6 +1,6 @@
 const soldiersDivPage = document.getElementById('soldiersPage');
 const imagesDivPage = document.getElementById('imagesPage');
-const labsDivPage = document.getElementById('labsPage');
+const homeDivPage = document.getElementById('homePage');
 
 google.charts.load('current', { 'packages': ['table'] });
 google.charts.load('current', { 'packages': ['corechart'] });
@@ -16,10 +16,9 @@ imagesDivPage.onclick = () => {
     window.location.href = '../images';
 };
 
-labsDivPage.onclick = () => {
-    window.location.href = '../labs';
+homeDivPage.onclick = () => {
+    window.location.href = '../';
 };
-
 
 async function drawChart() {
     const getLabsData = await fetch('http://localhost:3000/api/labs', {
