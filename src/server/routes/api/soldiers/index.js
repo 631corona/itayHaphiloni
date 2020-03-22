@@ -1,5 +1,5 @@
 const express = require('express');
-const { getSoldiersData } = require('../logic/soldiers/soldiersLogic');
+const { getSoldiersData } = require('../../../logic/soldiers/soldiersLogic');
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 const express = require('express');
-const { getCureData } = require('../logic/cure/cureLogic');
+const { getCureData } = require('../../../logic/cure/cureLogic');
 
 const router = express.Router();
 
