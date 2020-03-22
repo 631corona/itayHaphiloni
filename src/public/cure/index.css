@@ -10,12 +10,6 @@ div {
     padding: 10px;
 }
 
-#soldiersData {
-    display: flex;
-    width: fit-content;
-    margin: auto;
-}
-
 #main {
     display:grid;
     grid-template-columns: 20% 80%;
@@ -48,36 +42,9 @@ button:hover {
     background-color: #FFFFFF;
 }
 
-#images {
-    margin: auto;
-}
-
-img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    width: 300px;
-    transition: 0.5s all;
-}
-
-img:hover {
-    border: 1px solid #777;
-    width: 320px;
-    height: 320px;
-}
-
 span {
     margin: auto;
     display: table;
     padding: 10px;
     font-size: 70px;
-}
-
-#chart_div {
-    margin: auto;
-    width: 500px;
-}
-
-#table_div {
-    margin: auto;
-    width: 500px;
 }

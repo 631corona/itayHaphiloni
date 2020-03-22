@@ -10,12 +10,6 @@ div {
     padding: 10px;
 }
 
-#soldiersData {
-    display: flex;
-    width: fit-content;
-    margin: auto;
-}
-
 #main {
     display:grid;
     grid-template-columns: 20% 80%;
@@ -25,27 +19,6 @@ div {
 h2:hover {
     font-size:25px;
     cursor: pointer;
-}
-
-button {
-    float: right;
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.2s;
-}
-
-button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
 }
 
 #images {
@@ -63,21 +36,4 @@ img:hover {
     border: 1px solid #777;
     width: 320px;
     height: 320px;
-}
-
-span {
-    margin: auto;
-    display: table;
-    padding: 10px;
-    font-size: 70px;
-}
-
-#chart_div {
-    margin: auto;
-    width: 500px;
-}
-
-#table_div {
-    margin: auto;
-    width: 500px;
 }
