@@ -1,5 +1,5 @@
 async function showIsolated() {
-    const getSoldiersData = await fetch('http://localhost:3000/soldiers', {
+    const getSoldiersData = await fetch('http://localhost:3000/api/soldiers', {
         headers: {
             'Content-Type': 'application-json'
         }
@@ -17,7 +17,7 @@ async function showIsolated() {
 };
 
 async function showAmountAtHome() {
-    const getSoldiersData = await fetch('http://localhost:3000/soldiers', {
+    const getSoldiersData = await fetch('http://localhost:3000/api/soldiers', {
         headers: {
             'Content-Type': 'application-json'
         }
