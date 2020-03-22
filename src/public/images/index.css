@@ -25,20 +25,22 @@ h2:hover {
 }
 
 #images {
-    margin: auto;
+    position: fixed;
+    left: 20%;
 }
 
 img {
     margin: 5px;
     border: 1px solid #ccc;
-    width: 300px;
+    width: 450px;
+    height: 450px;
     transition: 0.5s all;
 }
 
 img:hover {
     border: 1px solid #777;
-    width: 320px;
-    height: 320px;
+    width: 500px;
+    height: 500px;
 }
 
 .sidenav {
