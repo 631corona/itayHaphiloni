@@ -3,6 +3,7 @@ const soldiersDivPage = document.getElementById('soldiersPage');
 const labsDivPage = document.getElementById('labsPage');
 const imagesDivPage = document.getElementById('imagesPage');
 const cureDivPage = document.getElementById('curePage');
+const cureButton = document.getElementById('cureButton');
 
 homeDivPage.onclick = () => {
     window.location.href = '../';
@@ -22,6 +23,38 @@ imagesDivPage.onclick = () => {
 
 cureDivPage.onclick = () => {
     window.location.href = '../cure';
+};
+
+cureButton.onclick = async () => {
+    const getCureData = await fetch('http://localhost:3000/api/cure/found', {
+        headers: {
+            'Content-Type': 'application-json'
+        }
+    });
+
+    const cureData = await getCureData.json();
+
+    const timer = document.getElementById('timer');
+
+    if (cureData.is_found) {
+        let time = 7;
+        let test = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            if (time === 0) {
+                clearInterval(test);
+                alert('celebration!!!!');
+            }
+
+            timer.innerHTML = `cure found!! celebration in ${time} seconds`;
+
+            time--;
+        };
+    }
+
+    else {
+        timer.innerHTML = 'cure has not been found yet';
+    }
 };
 
 setInterval(() => location.reload(), 343000);

@@ -1,6 +1,8 @@
 const homeDivPage = document.getElementById('homePage');
-const imagesDivPage = document.getElementById('imagesPage');
+const soldiersDivPage = document.getElementById('soldiersPage');
 const labsDivPage = document.getElementById('labsPage');
+const imagesDivPage = document.getElementById('imagesPage');
+const cureDivPage = document.getElementById('curePage');
 const isolatedDiv = document.getElementById('isolated');
 const atHomeDiv = document.getElementById('soldiersAtHome');
 
@@ -8,12 +10,20 @@ homeDivPage.onclick = () => {
     window.location.href = '../';
 };
 
-imagesDivPage.onclick = () => {
-    window.location.href = '../images';
+soldiersDivPage.onclick = () => {
+    window.location.href = '../soldiers';
 };
 
 labsDivPage.onclick = () => {
     window.location.href = '../labs';
+};
+
+imagesDivPage.onclick = () => {
+    window.location.href = '../images';
+};
+
+cureDivPage.onclick = () => {
+    window.location.href = '../cure';
 };
 
 isolatedDiv.onclick = async () => {
@@ -50,5 +60,13 @@ atHomeDiv.onclick = async () => {
     });
 
     document.getElementById('atHomeDisplay').innerText = amountAtHome;
+};
+
+setInterval(() => location.reload(), 343000);
+
+let timeout;
+document.onmousemove = () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => { alert('והבדידות והבדידים  החברים היחידים שנשארו לי'); }, 60000);
 };
 
