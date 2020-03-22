@@ -16,8 +16,24 @@ div {
     padding: 0px 10px;
 }
 
+#main-bar {
+    width: 400px;
+}
+
+.timer, .cure {
+    width: 100%;
+    float: left;
+    height: 80px;
+    font-size:30px ;
+}
+
+#timer {
+    position: fixed;
+    left:37%;
+}
+
 h2:hover {
-    font-size:25px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -34,18 +50,14 @@ button {
     color: black;
     text-align: center;
     transition: all 0.2s;
+    font-size: 30px;
+    position: fixed;
+    left: 35%;
 }
 
 button:hover {
     color: #000000;
     background-color: #FFFFFF;
-}
-
-span {
-    margin: auto;
-    display: table;
-    padding: 10px;
-    font-size: 70px;
 }
 
 .sidenav {
