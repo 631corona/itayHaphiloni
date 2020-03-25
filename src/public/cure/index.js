@@ -2,6 +2,8 @@ const cureDivPage = document.getElementById('curePage');
 const cureButton = document.getElementById('cureButton');
 
 cureButton.onclick = async () => {
+    const fireworks = document.getElementById('scene');
+    const title = document.getElementById('title');
     const getCureData = await fetch('http://localhost:3000/api/cure/found', {
         headers: {
             'Content-Type': 'application-json'
@@ -23,7 +25,11 @@ cureButton.onclick = async () => {
             if (time === 0) {
                 clearInterval(test);
                 timer.innerHTML = '';
-                alert('celebration!!!!');
+                fireworks.style = 'display:block';
+                cureButton.style = 'display:none';
+                title.style = 'display:none';
+                document.body.style.backgroundColor = 'black';
+
             }
             time--;
         };
